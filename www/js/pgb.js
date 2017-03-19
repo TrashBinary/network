@@ -17,7 +17,7 @@ function checkConnection() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'Brak połączenia';
 
-		alert('Typ połączenia: ' + states[networkState]);
+		document.getElementById('wypisz').innerHTML = 'Typ połączenia: ' + states[networkState];
 }
 
 checkConnection();
